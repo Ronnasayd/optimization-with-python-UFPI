@@ -1,0 +1,44 @@
+2		#quantidade de barras
+1e-10		#erro utilizado para parada
+2		#local das barras com potencia ativa conhecida
+2		#local das barras com potencia reativa conhecida
+0.25		#valor da potencia ativa para barra n conhecida
+0.0		#valor da potencia reativa para barra n conhecida
+1.0 1.0		#estimação inicial dos valores de modulo de tensao (V)
+0.0 0.0		#estimação inicial dos alores de fase de tensao (Theta)
+0.0 0.0		#primeira linha da matriz de condutancia
+0.0 0.0		#enesima linha da matriz de condutancia
+-10.0 10.0	#primeira linha da matriz de susceptancia
+10.0 -12.0	#enesima linha da matriz de susceptancia
+-----------------------------------------------------------------------------
+2
+1e-10
+2
+2
+0.25
+0.0
+1.0 1.0
+0.0 0.0
+0.0 0.0
+0.0 0.0
+-10.0 10.0
+10.0 -12.0
+#resultado correto v2 = 0.83296 theta2 = 0.030 
+------------------------------------------------------------------------------------
+4
+1e-10
+1 2 3
+2 3
+0.6 -0.5 -0.6
+-0.2 -0.1
+1.05 1.0 1.0 1.0
+0.0 0.0 0.0 0.0
+2.0 -0.5 -1.0 -0.5
+-0.5 1.5 -1.0 -0.0
+-1.0 -1.0 2.2 -0.2
+-0.5 -0.0 -0.2 0.7
+-13.0 5.0 3.0 5.0
+5.0 -8.0 3.0 0.0
+3.0 3.0 -9.0 3.0
+5.0 0.0 3.0 -8.0
+#resultado correto v2 =0.9929,v3 =0.9898,theta1 = -0.0388,theta2=-0.1244,theta3 =-0.1138
